@@ -1,2 +1,2 @@
-# siglyser
+# SigLyser
 The signal processing application
