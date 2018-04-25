@@ -30,13 +30,19 @@ header h1.logo:hover {
   text-decoration: none;
 }
 
-header h1_1.logo {
+header h4.logo {
   margin: 0;
   font: Calibri;
   font-size: 1.7;
   color: green;
   float: left;
 }
+
+header h4.logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 /*
  * Center the body content
  */
