@@ -2,18 +2,46 @@
 <html>
   <head>
       <title>SigLyser - The signal processing application</title>
-      <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+  	<style type="text/css">
+.auto-style1 {
+	font-family: Calibri;
+	font-weight: normal;
+	font-size: large;
+	text-align: center;
+}
+.auto-style2 {
+	color: #0000FF;
+}
+.auto-style3 {
+	color: #05BC05;
+}
+.auto-style4 {
+	text-align: center;
+}
+.auto-style5 {
+	font-family: Calibri;
+}
+.auto-style6 {
+	text-decoration: none;
+}
+.auto-style7 {
+	color: #000000;
+}
+</style>
   </head>
   <body>
     <header>
       <div class="container">
-        <h1 class="logo">SigLyser</h1>
-        <strong><nav>
-          <ul class="menu">
-            <li><a href="{{ url_for('home') }}">Home</a></li>
-            <li><a href="{{ url_for('about') }}">About</a></li>
-          </ul>
-        </nav></strong>
+        <h1 class="auto-style1"><span class="auto-style2">Sig</span><span class="auto-style3">Lyser</span></h1>
+		  <p class="auto-style1">The Signal Processing Application</p>
+		  <nav>
+          	<p class="auto-style4"><span class="auto-style5">
+			<a href="{{ url_for('home') }}" class="auto-style6">
+			<span class="auto-style7">Home</span></a></span>
+			<span class="auto-style5">|
+			<a href="{{ url_for('about') }}" class="auto-style6">
+			<span class="auto-style7">About</span></a> | Contribute | Contact</span></p>
+        </nav>
       </div>
     </header>
     <div class="container">
