@@ -1,7 +1,7 @@
-﻿body {
+body {
   margin: 0;
   padding: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Calibri";
   color: #060;
 }
 
@@ -10,7 +10,7 @@
  */
 
 header {
-  background-color: #DFB887;
+  background-color: #ADD8E6;
   height: 35px;
   width: 100%;
   opacity: .9;
@@ -19,9 +19,8 @@ header {
 
 header h1.logo {
   margin: 0;
-  font-size: 1.7em;
+  font-size: 1.7;
   color: #fff;
-  text-transform: uppercase;
   float: left;
 }
 
