@@ -19,9 +19,9 @@ header {
 
 header h1.logo {
   margin: 0;
+  font: Calibri;
   font-size: 1.7em;
   color: #fff;
-  text-transform: uppercase;
   float: left;
 }
 
