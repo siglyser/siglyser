@@ -1,4 +1,4 @@
-body {
+﻿body {
   margin: 0;
   padding: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -10,8 +10,8 @@ body {
  */
 
 header {
-  background-color: #00FFFF;
-  height: 1px;
+  background-color: #DFB887;
+  height: 35px;
   width: 100%;
   opacity: .9;
   margin-bottom: 10px;
@@ -19,26 +19,13 @@ header {
 
 header h1.logo {
   margin: 0;
-  font: Calibri;
-  font-size: 1.7;
-  color: #0000FF;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
   float: left;
 }
 
 header h1.logo:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-header h4.logo {
-  margin: 0;
-  font: Calibri;
-  font-size: 1.7;
-  color: green;
-  float: left;
-}
-
-header h4.logo:hover {
   color: #fff;
   text-decoration: none;
 }
@@ -69,14 +56,14 @@ div.about {
 }
 
 h2 {
-  font-size: 3;
+  font-size: 3em;
   margin-top: 40px;
   text-align: center;
   letter-spacing: -2px;
 }
 
 h3 {
-  font-size: 1.7;
+  font-size: 1.7em;
   font-weight: 100;
   margin-top: 30px;
   text-align: center;
