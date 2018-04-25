@@ -27,6 +27,11 @@
 .auto-style7 {
 	color: #000000;
 }
+.auto-style8 {
+	text-align: center;
+	font-family: Calibri;
+	font-size: xx-small;
+}
 </style>
   </head>
   <body>
@@ -40,7 +45,11 @@
 			<span class="auto-style7">Home</span></a></span>
 			<span class="auto-style5">|
 			<a href="{{ url_for('about') }}" class="auto-style6">
-			<span class="auto-style7">About</span></a> | Contribute | Contact</span></p>
+			<span class="auto-style7">About</span></a> |
+			<a class="auto-style6" href="https://github.com/siglyser/siglyser" target="_blank">
+			<span class="auto-style7">Contribute</span></a> | Contact |
+			<a class="auto-style6" href="http://siglyser.wordpress.com" target="_blank">
+			<span class="auto-style7">Blog</span></a></span></p>
         </nav>
       </div>
     </header>
@@ -48,5 +57,7 @@
         {%block content%}
         {%endblock%}
     </div>
+    <p>&nbsp;</p>
+	<p class="auto-style8">SigLyser by Pushkar Sheth 26 April 2018</p>
   </body>
 </html>
