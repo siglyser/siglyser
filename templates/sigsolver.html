@@ -2,8 +2,9 @@
 {% block content %}
 <link rel="stylesheet" href={{cdn_css | safe}} type="text/css" />
 <script type="text/javascript" src={{cdn_js | safe}}></script>
-<div class="home">
-    <p>Welcome to SigSolve - Main Window</p>
+<link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}"
+<div class="container">
+    <p  class="auto-style1">Welcome to SigSolve - Main Window</p>
 	
 </div>
 {{script1 | safe}}

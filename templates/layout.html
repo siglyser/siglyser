@@ -1,41 +1,21 @@
 ﻿<!DOCTYPE html>
 <html>
+
   <head>
       <title>SigLyser - The signal processing application</title>
-  	<style type="text/css">
-.auto-style2 {
-	color: #0000FF;
-}
-.auto-style3 {
-	color: #05BC05;
-}
-.auto-style7 {
-	color: #000000;
-}
-	.auto-style9 {
-		font-family: Calibri;
-		font-weight: normal;
-		font-size: medium;
-		text-align: left;
-	}
-	.auto-style10 {
-		text-decoration: none;
-	}
-	</style>
+ 	  <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}"
   </head>
   <body>
     <header>
       <div class="container">
         <h1 class="auto-style9">
 		<a class="auto-style10" href="{{ url_for('home') }}"><span class="auto-style2">Sig</span><span class="auto-style3">Lyser</span></a><span class="auto-style7"> 
-		| <a href="{{ url_for('start') }}" class="auto-style10">start</a> | 
+		| <a href="{{ url_for('start') }}" class="auto-style10">start</a> || 
 		<a class="auto-style10" href="http://siglyser.github.io">project</a> | 
 		<a class="auto-style10" href="http://siglyser.wordpress.com">blog</a></span></h1>
       </div>
     </header>
-	<div class="container">
-        {%block content%}
-        {%endblock%}
-    </div>
+ {%block content%}
+ {%endblock%}
   </body>
 </html>
