@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="home">
+    <h1 class="auto-style1">Start</h1>
+    <p class="auto-style2">Select .csv file to upload:</p>
+	<form action="{{ url_for('sigsolver') }}" method="POST" enctype="multipart/form-data">
+		<input title="Select file to read" placehoder="Select file to read" type="file" name="filedata" required />
+		<button type="submit"> Submit </button>
+	</form>
+</div>
+<p class="auto-style2">{% endblock %}
+</p>
