@@ -6,3 +6,11 @@ MarkupSafe==0.23
 Werkzeug==0.11.10
 pandas==0.20.3
 bokeh==0.12.7
+numba==0.35.0+10.g143f70e
+numexpr==2.6.2
+numpy==1.13.1
+numpydoc==0.7.0
+scikit-image==0.13.0
+scikit-learn==0.19.0
+scipy==0.19.1
+six==1.10.0
