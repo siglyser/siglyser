@@ -65,5 +65,5 @@ def evalfreqfftvect(time_sec, vibr):
 	
 
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run()
 
