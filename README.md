@@ -2,6 +2,8 @@
 The signal processing application
 
 ## Project Log
+#### 03 April 2018:
+* Included input file format instructions on start page.
 #### 28 April 2018:
 * Implemented basic .csv file read functionality.
 * Implemented raw data plotting utility.
