@@ -18,3 +18,4 @@ The signal processing application
 * Implement filtering
 * Implement downloading processed data
 * come up with enhanced data parser - current parser accepts only csv
+* include to do list in github projects page.
