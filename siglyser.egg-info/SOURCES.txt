@@ -1,0 +1,8 @@
+README.md
+setup.py
+siglyser/__init__.py
+siglyser/main.py
+siglyser.egg-info/PKG-INFO
+siglyser.egg-info/SOURCES.txt
+siglyser.egg-info/dependency_links.txt
+siglyser.egg-info/top_level.txt
