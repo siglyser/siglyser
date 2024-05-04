@@ -14,6 +14,9 @@ def calc_fft(time_sec, vibr):
     Inputs:
     time_sec: time in second
     vibr: vibration signal corresponding to time data.
+    Outputs:
+    frequency in Hz
+    vibration fft in base units.
     """
     datalength_fft = len(time_sec)
     datalengthby2 = int(datalength_fft/2)
@@ -48,7 +51,7 @@ def calc_3dfft(time_sec, speed_rpm, vibr):
     speedindex = [(np.mean(alldata_cycle_vect[int(j)-1][:,2])) for j in e]
     rms_vibr = [(np.sqrt(np.mean(np.square((alldata_cycle_vect[int(j)-1][:,3]))))) for j in e]
     ampl_vibr = [((max(((alldata_cycle_vect[int(j)-1][:,3])))-min(((alldata_cycle_vect[int(j)-1][:,3]))))/2) for j in e]
-    freqhztemp_vibrffttemp = [(eval_freqfft_vect((alldata_cycle_vect[int(j)-1][:,1]), (alldata_cycle_vect[int(j)-1][:,3]))) for j in e]
+    freqhztemp_vibrffttemp = [(calc_fft((alldata_cycle_vect[int(j)-1][:,1]), (alldata_cycle_vect[int(j)-1][:,3]))) for j in e]
     freqhztemp = [freqhztemp_vibrffttemp[int(j)-1][0]  for j in e]
     vibrffttemp = [freqhztemp_vibrffttemp[int(j)-1][1]  for j in e]
     freqhz3d = np.array([], dtype = float64)
