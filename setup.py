@@ -8,7 +8,7 @@ with open("README.md", "r") as f:
 
 setup(
     name='siglyser',
-    version='0.2',
+    version='0.21',
     packages=find_packages(),
     install_requires=[
         # Add dependencies here.
