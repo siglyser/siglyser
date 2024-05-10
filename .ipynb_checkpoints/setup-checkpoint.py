@@ -8,7 +8,10 @@ with open("README.md", "r") as f:
 
 setup(
     name='siglyser',
-    version='0.21',
+    version='0.22',
+    description='Signal processing library',
+    author='Pushkar Sheth',
+    author_email='siglyserdev@gmail.com',
     packages=find_packages(),
     install_requires=[
         # Add dependencies here.
