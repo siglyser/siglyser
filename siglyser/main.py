@@ -5,6 +5,7 @@ import numpy as np
 from scipy.fftpack import fft, ifft
 from scipy.signal import butter, lfilter
 import scipy as sp
+import matplotlib as mpl
 import matplotlib.pyplot as plt
 
 
@@ -93,7 +94,7 @@ def calc_rms_ampl(time_sec, speed_rpm, vibr):
     cycle_vect= np.floor(((cccum2_vect_temp/720.0))+1)
     ccrel2_vect_temp = cccum2_vect_temp-(cycle_vect-1)*720
     maxcy_vect = max(cycle_vect)
-    alldata_vect = np.stack((cycle_vect, time_sec, speed_rpm, vibr_gf), axis = 1)
+    alldata_vect = np.stack((cycle_vect, time_sec, speed_rpm, vibr), axis = 1)
     e, inds = np.unique(alldata_vect[:,0], return_index=True)
     alldata_cycle_vect = np.split(alldata_vect, inds)[1:]
     speedindex = [(np.mean(alldata_cycle_vect[int(j)-1][:,2])) for j in e]
